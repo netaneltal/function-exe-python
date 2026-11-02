@@ -28,18 +28,18 @@
 
 #  practic-4
 
-list = [1, 2, 3]
-numbers = list(range(5)) #TypeError בגלל שהוא לא מצא את הפונקציה listמכיוון שהיא תפוסה במשתנה
+# list = [1, 2, 3]
+# numbers = list(range(5)) #TypeError בגלל שהוא לא מצא את הפונקציה listמכיוון שהיא תפוסה במשתנה
 
 #  practic-5
+
+def add(cart,price):
+    return cart + [price]
+def cart_total(cart):
+    return sum(cart)
+   
 cart = []
-total = 0
-def add(price):
-    total = 0
-    lst =[]
-    lst.append(price)
-    total = total + price
-    return lst
-add(100)
-add(50)
-print(cart,total)
+cart = add(cart, 100)
+cart = add(cart, 50)
+print(cart,cart_total(cart))
+print(cart)
